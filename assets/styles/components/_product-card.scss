@@ -1,0 +1,26 @@
+
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: $spacer;
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+  }
+  &__title {
+    text-transform: uppercase;
+  }
+  &__text {
+    font-weight: $font-weight-semibold;
+  }
+}

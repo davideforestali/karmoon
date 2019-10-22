@@ -1,0 +1,82 @@
+
+
+// main nav 
+
+.nav {
+  &__item {
+    @include main-nav-base;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    font-weight: $font-weight-bold;
+    display: block;
+    padding: $spacer 0;
+    background: url('../img/nav-collection-bg.jpg') no-repeat center;
+    background-size: cover;
+    &:hover {
+      .nav__item-overlay {
+        background-color: transparent;
+      }
+    }
+    @include breakpoint(lg) {
+      display: inline-block;
+      font-size: $font-size-base;
+      padding: 0;
+      background: none;
+    }
+  }
+  &__item-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $black-opacity-04;
+    @include breakpoint(lg) {
+      display: none;
+    }
+  }
+  &__text {
+    position: relative;
+  }
+  @include breakpoint(lg) {
+    &__item + &__item {
+      margin-left: $spacer;
+    }
+  }
+}
+
+// secondary nav
+
+.secondary-nav {
+  &__item:last-child {
+    margin-bottom: $spacer-7; 
+  }
+  @include breakpoint(lg) {
+    @include off-canvas-body;
+    background-color: $black-opacity-09;
+    &__item:first-child {
+      margin-top: $spacer-7; 
+    }
+  }
+  &__item {
+    @include main-nav-base;
+    transition: $transition-color;
+    margin-bottom: $spacer-2;
+    display: block;
+    @include breakpoint(lg) {
+      font-size: $font-size-h2;
+    }
+    &:hover {
+      color: $grey;
+      transition: $transition-color;
+    }
+  }
+}
+
+
+.icons-nav {
+  &__item {
+    text-decoration: none;
+    margin-left: $spacer-2;
+  }
+}

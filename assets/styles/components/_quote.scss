@@ -1,0 +1,16 @@
+
+.quote {
+    &__title {
+        max-width: 80%;
+        margin: 0 auto $spacer-5;
+        font-size: $font-size-h2;
+        @include breakpoint(md) {
+            font-size: $font-size-display4;
+        }
+    }
+    &__author {
+        display: block;
+        margin-bottom: $spacer-1;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,21 @@
+
+ .search {
+    position: relative;
+    display: flex;
+    &__input {
+      width: 100%;
+      border: 3px solid $white;
+      border-right: none;
+      color: $white;
+      padding: 1rem;
+      background-color: transparent;
+    }
+    &__button {
+      border: 3px solid $white;
+      border-left: none;
+      background-color: transparent;
+      color: $white;
+      cursor: pointer;
+      padding: $spacer;
+    }
+   }

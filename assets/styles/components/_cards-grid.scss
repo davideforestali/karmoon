@@ -1,0 +1,16 @@
+
+.cards-grid {
+    background-color: $blue-light;
+    @include breakpoint(sm) {
+      display: flex;
+      flex-wrap: wrap;
+      &__item {
+        width: 50%;
+      }
+    }
+    @include breakpoint(md) {
+      &__item {
+        width: 33.333333%;
+      }
+    }
+  }

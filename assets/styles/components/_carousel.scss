@@ -1,0 +1,43 @@
+.carousel { 
+    position: relative;
+    overflow: hidden;
+    color: $black;
+    height: 400px;
+    @include breakpoint(md) {
+        height: 500px;
+    }
+    &__inner {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__slide {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        transform: translateX(-100%);
+        transition: transform 300ms;
+        text-align: center;
+        &--current {
+            position: relative;
+            transform: translateX(0);
+        }
+    }
+    &__slide--current ~ &__slide {
+        transform: translateX(100%);
+    }
+    &__control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &--prev {
+            left: $spacer;
+        }
+        &--next {
+            right: $spacer;
+        }
+    }   
+  }
+  

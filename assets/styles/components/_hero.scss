@@ -1,0 +1,48 @@
+.hero {
+  padding: $header-height-mobile 0 $spacer-5 0;
+  min-height: 500px;
+  background: url('../img/headphones.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  &__viewall-btn,
+  &__text {
+    display: none;
+  }
+  @include breakpoint(sm) {
+    &__text {
+      display: inherit;
+    }
+  }
+  @include breakpoint(md) {
+    min-height: 700px;
+    padding: $header-height 0 $spacer-5 0;
+    &__viewall-btn {
+      display: initial;
+      margin-right: $spacer;
+    }
+  }
+  &__content {
+    position: absolute;
+    max-width: 400px;
+    padding: 0 $spacer;
+    bottom: $spacer-5;
+    @include breakpoint(sm) {
+      padding: 0 $spacer 0 $spacer-5;
+      top: 50%;
+      transform: translateY(-50%);
+      bottom: auto;
+    }
+    @include breakpoint(lg) {
+      max-width: 700px;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-h2;
+    line-height: $line-height-base;
+    @include breakpoint(lg) {
+      font-size: $font-size-display4;
+      line-height: $line-height-base - ($line-height-base / 4);
+    }
+  }
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Davide Forestali Karmoon Dev Test</title>
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:600,700,800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="home">
+
+  <!-- header -->
+  <header class="main-header">
+    <div class="container main-header__container">
+
+      <!-- toggle mobile -->
+      <button class="toggle-btn main-header__toggle-btn main-header__toggle-btn-mobile"><span></span></button>
+
+      <!-- logo -->
+      <a href="https://karmoon.co.uk/">
+        <svg class="main-header__logo logo" width="109px" height="27px" viewBox="0 0 109 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+          <g id="KARMOON">
+            <path d="M62.3338 18.7734Q64.1258 20.7363 67.1043 20.7363Q70.1512 20.7363 71.9676 18.7441Q73.784 16.752 73.784 13.3242Q73.784 10.1699 72.0115 8.2168Q70.2391 6.26367 67.3387 6.26367Q64.1941 6.26367 62.368 8.27539Q60.5418 10.2871 60.5418 13.666Q60.5418 16.8105 62.3338 18.7734ZM83.4824 20.7363Q80.5039 20.7363 78.7119 18.7734Q76.9199 16.8105 76.9199 13.666Q76.9199 10.2871 78.7461 8.27539Q80.5723 6.26367 83.7168 6.26367Q86.6172 6.26367 88.3896 8.2168Q90.1621 10.1699 90.1621 13.3242Q90.1621 16.752 88.3457 18.7441Q86.5293 20.7363 83.4824 20.7363ZM11.582 20.502L9.29688 20.502L3.88672 14.0957Q3.58398 13.7344 3.51563 13.6074L3.47656 13.6074L3.47656 20.502L1.83594 20.502L1.83594 6.49805L3.47656 6.49805L3.47656 13.0801L3.51563 13.0801Q3.65234 12.8652 3.88672 12.6016L9.12109 6.49805L11.1621 6.49805L5.15625 13.2168L11.582 20.502ZM25.5773 20.502L23.7609 20.502L22.2766 16.5762L16.3391 16.5762L14.9426 20.502L13.1164 20.502L18.4875 6.49805L20.1867 6.49805L25.5773 20.502ZM37.0238 20.502L38.977 20.502L36.35 16.293Q36.0668 15.834 35.8373 15.4873Q35.6078 15.1406 35.3734 14.8672Q35.1391 14.5938 34.8803 14.3936Q34.6215 14.1934 34.2699 14.0371L34.2699 13.998Q34.9828 13.8125 35.5541 13.4756Q36.1254 13.1387 36.5307 12.6602Q36.9359 12.1816 37.1557 11.5713Q37.3754 10.9609 37.3754 10.2285Q37.3754 9.29102 37.0531 8.59277Q36.7309 7.89453 36.1596 7.42578Q35.5883 6.95703 34.8119 6.72754Q34.0355 6.49805 33.1176 6.49805L28.9379 6.49805L28.9379 20.502L30.5785 20.502L30.5785 14.5449L31.9262 14.5449Q32.3852 14.5449 32.7514 14.6572Q33.1176 14.7695 33.435 15.0137Q33.7523 15.2578 34.0551 15.6436Q34.3578 16.0293 34.6801 16.5762L37.0238 20.502ZM56.4781 20.502L54.8473 20.502L54.8473 11.1074Q54.8473 9.99414 54.984 8.38281L54.9449 8.38281Q54.7105 9.33008 54.525 9.74023L49.7398 20.502L48.9391 20.502L44.1637 9.81836Q43.9586 9.34961 43.7438 8.38281L43.7047 8.38281Q43.7828 9.22266 43.7828 11.127L43.7828 20.502L42.2008 20.502L42.2008 6.49805L44.3688 6.49805L48.6656 16.2637Q49.1637 17.3867 49.3102 17.9434L49.3688 17.9434Q49.7887 16.791 50.0426 16.2246L54.4273 6.49805L56.4781 6.49805L56.4781 20.502ZM103.493 20.502L105.505 20.502L105.505 6.49805L103.864 6.49805L103.864 16.3613Q103.864 17.8164 103.962 18.4219L103.923 18.4219Q103.796 18.168 103.357 17.4844L96.3449 6.49805L94.216 6.49805L94.216 20.502L95.8566 20.502L95.8566 10.3848Q95.8566 8.91016 95.7785 8.46094L95.8371 8.46094Q96.0129 8.91992 96.2863 9.33984L103.493 20.502ZM63.6375 9.33984Q65.0145 7.74805 67.2215 7.74805Q69.4871 7.74805 70.7762 9.26172Q72.0652 10.7754 72.0652 13.5488Q72.0652 16.2539 70.7371 17.7578Q69.409 19.2617 67.1043 19.2617Q64.9461 19.2617 63.6033 17.6846Q62.2605 16.1074 62.2605 13.5195Q62.2605 10.9316 63.6375 9.33984ZM83.5996 7.74805Q81.3926 7.74805 80.0156 9.33984Q78.6387 10.9316 78.6387 13.5195Q78.6387 16.1074 79.9814 17.6846Q81.3242 19.2617 83.4824 19.2617Q85.7871 19.2617 87.1152 17.7578Q88.4434 16.2539 88.4434 13.5488Q88.4434 10.7754 87.1543 9.26172Q85.8652 7.74805 83.5996 7.74805ZM30.5785 13.0605L30.5785 7.98242L32.8246 7.98242Q34.2016 7.98242 34.9291 8.6123Q35.6566 9.24219 35.6566 10.3652Q35.6566 10.9902 35.4418 11.4932Q35.227 11.9961 34.8461 12.3428Q34.4652 12.6895 33.9428 12.875Q33.4203 13.0605 32.8051 13.0605L30.5785 13.0605ZM21.7395 15.1016L19.5422 9.13477Q19.4348 8.8418 19.3273 8.19727L19.2883 8.19727Q19.1906 8.79297 19.0637 9.13477L16.8859 15.1016L21.7395 15.1016Z" />
+          </g>
+        </svg>
+      </a>
+
+      <div class="main-header__nav-wrapper">
+        <nav class="nav main-header__nav">
+          <!-- search mobile -->
+          <div class="search main-header__search-mobile">
+            <input type="text" class="search__input" placeholder="Search...">
+            <button type="submit" class="search__button">
+              <svg class="icon-search" height="512" viewBox="0 0 515.558 515.558" width="512" xmlns="http://www.w3.org/2000/svg">
+                <path d="m378.344 332.78c25.37-34.645 40.545-77.2 40.545-123.333 0-115.484-93.961-209.445-209.445-209.445s-209.444 93.961-209.444 209.445 93.961 209.445 209.445 209.445c46.133 0 88.692-15.177 123.337-40.547l137.212 137.212 45.564-45.564c0-.001-137.214-137.213-137.214-137.213zm-168.899 21.667c-79.958 0-145-65.042-145-145s65.042-145 145-145 145 65.042 145 145-65.043 145-145 145z"/>
+              </svg>
+            </button>
+          </div>
+          
+          <a href="javascript:void(0)" data-tile="collection-1" class="nav__item main-header__nav-item">
+            <span class="nav__item-overlay"></span>
+            <span class="nav__text">Collection 1</span>
+          </a>
+          <a href="javascript:void(0)" data-tile="collection-2" class="nav__item main-header__nav-item">
+            <span class="nav__item-overlay"></span>
+            <span class="nav__text">Collection 2</span>
+          </a>
+          <a href="javascript:void(0)" data-tile="collection-1" class="nav__item main-header__nav-item">
+            <span class="nav__item-overlay"></span>
+            <span class="nav__text">Collection 1</span>
+          </a>
+          <a href="javascript:void(0)" data-tile="collection-2" class="nav__item main-header__nav-item">
+            <span class="nav__item-overlay"></span>
+            <span class="nav__text">Collection 2</span>
+          </a>
+          <a href="javascript:void(0)" data-tile="collection-1" class="nav__item main-header__nav-item">
+            <span class="nav__item-overlay"></span>
+            <span class="nav__text">Collection 1</span>
+          </a>
+
+          <button class="toggle-btn main-header__toggle-btn"><span></span></button>
+        </nav>
+
+        <nav class="secondary-nav main-header__secondary-nav">
+          <a href="javascript:void(0)" class="secondary-nav__item">Delivery Info</a>
+          <a href="javascript:void(0)" class="secondary-nav__item">Retail</a>
+          <a href="javascript:void(0)" class="secondary-nav__item">Partners</a>
+          <a href="javascript:void(0)" class="secondary-nav__item">FAQ</a>
+          <a href="javascript:void(0)" class="secondary-nav__item">Blog</a>
+          <a href="javascript:void(0)" class="secondary-nav__item">News</a>
+          <a href="javascript:void(0)" class="secondary-nav__item">Account</a>
+        </nav>
+
+        <!-- menu collection tile 1 -->
+        <div class="menu-collection-tile" id="collection-1">
+          <div class="menu-collection-tile__text">
+            <h3 class="menu-collection-tile__title">Collection 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut consequatur? Aliquam nisi.</p>
+            <button class="btn-hollow-black">All earphones</button>
+          </div>
+
+          <div class="menu-collection-tile__card product-card">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="product-card__img">
+            <div class="product-card__content">
+              <h4 class="product-card__title">Title name</h4>
+              <p class="product-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit repudiandae dolores.</p>
+            </div>
+          </div>
+
+          <div class="menu-collection-tile__gallery gallery">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="gallery__item">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="gallery__item">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="gallery__item">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="gallery__item">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="gallery__item">
+            <div class="gallery__button">
+              <button class="btn-hollow-black">View All</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu collection tile 2 -->
+        <div class="menu-collection-tile" id="collection-2">
+          <div class="menu-collection-tile__text">
+            <h3 class="menu-collection-tile__title">Collection 2</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut consequatur? Aliquam nisi.</p>
+            <button class="btn-hollow-black">All earphones</button>
+          </div>
+
+          <div class="menu-collection-tile__card product-card">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="product-card__img">
+            <div class="product-card__content">
+              <h4 class="product-card__title">Title name</h4>
+              <p class="product-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit repudiandae dolores.</p>
+            </div>
+          </div>
+
+          <div class="menu-collection-tile__gallery gallery">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="gallery__item">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="gallery__item">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="gallery__item">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="gallery__item">
+            <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="gallery__item">
+            <div class="gallery__button">
+              <button class="btn-hollow-black">View All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- icons -->
+      <nav class="icons-nav">
+        <a href="javascript:void(0)" class="main-header__search icons-nav__item">
+          <svg class="icon-search main-header__icon-search" height="512" viewBox="0 0 515.558 515.558" width="512" xmlns="http://www.w3.org/2000/svg">
+              <path d="m378.344 332.78c25.37-34.645 40.545-77.2 40.545-123.333 0-115.484-93.961-209.445-209.445-209.445s-209.444 93.961-209.444 209.445 93.961 209.445 209.445 209.445c46.133 0 88.692-15.177 123.337-40.547l137.212 137.212 45.564-45.564c0-.001-137.214-137.213-137.214-137.213zm-168.899 21.667c-79.958 0-145-65.042-145-145s65.042-145 145-145 145 65.042 145 145-65.043 145-145 145z"/>
+          </svg>
+        </a>
+        <a href="javascript:void(0)" class="icons-nav__item">
+          <svg class="icon-bag main-header__icon-bag" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+            <g id="ic_bag">
+              <path d="M2 0L16 0L18 13L0 13L2 0Z" transform="matrix(1 0 0 -1 3 21)" id="Rectangle-2" fill="none" stroke-width="2" stroke-linecap="round" />
+              <path d="M8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4" transform="translate(8 3)" id="Oval" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </a>
+      </nav>
+
+    </div>
+  </header>
+  
+  <main>
+    
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container">
+        <article class="hero__content">
+          <h1 class="hero__title">Introducing the new Sound Booster</h1>
+          <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt erat ut pharetra dapibus. Duis semper lorem.</p>
+          <div>
+            <button class="btn-hollow-white hero__viewall-btn">All hearphones</button>
+            <button class="btn-primary ">Buy now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cards grid -->
+    <section id="cards-grid" class="cards-grid">
+        <div class="product-card cards-grid__item">
+          <img src="assets/img/earphones-black.jpg" alt="Earphones black" class="product-card__img">
+          <div class="product-card__content">
+            <h4 class="product-card__title">Product title</h4>
+            <p class="product-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit repudiandae dolores.</p>
+          </div>
+        </div>
+        <div class="product-card cards-grid__item">
+          <img src="assets/img/earphones-blue.jpg" alt="Earphones blue" class="product-card__img">
+          <div class="product-card__content">
+            <h4 class="product-card__title">Product title</h4>
+            <p class="product-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit repudiandae dolores.</p>
+          </div>
+        </div>
+        <div class="product-card cards-grid__item">
+          <img src="assets/img/earphones-wired.jpg" alt="Earphones wired" class="product-card__img">
+          <div class="product-card__content">
+            <h4 class="product-card__title">Product title</h4>
+            <p class="product-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit repudiandae dolores.</p>
+          </div>
+        </div>
+    </section>
+  
+
+    <!-- Quotes -->
+    <section>
+      <div class="container">
+        <div class="carousel"> 
+            <div class="carousel__inner">
+              <div class="quote carousel__slide carousel__slide--current">
+                <h3 class="quote__title">How you live, how you die, isn't up to me I'm not your Governor</h3>
+                <span class="quote__author">Rick Grimes</span>
+                <span>Title - Company name</span>
+              </div>
+              <div class="carousel__slide">
+                <h3 class="quote__title">You can breathe. You can blink. You can cry… Hell, they’re all gonna be doing that</h3>
+                <span class="quote__author">Negan</span>
+                <span>Title - Company name</span>
+              </div>
+              <div class="carousel__slide">
+                <h3 class="quote__title">Adolescence is a 20th century invention</h3>
+                <span class="quote__author">The Governor</span>
+                <span>Title - Company name</span>
+              </div>
+            </div>
+            <span class="carousel__control carousel__control--prev icon-arrow-left"></span>
+            <span class="carousel__control carousel__control--next icon-arrow-right"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <a href="https://karmoon.co.uk/">
+        <img  class="main-footer__logo" src="assets/img/karmoon-logo.svg" />
+      </a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quasi eum omnis. Alias ratione, explicabo maiores voluptatum adipisci quos molestiae deserunt commodi animi! Quibusdam sapiente quam officiis dolorem similique esse!</p>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

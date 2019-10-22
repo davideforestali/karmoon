@@ -1,0 +1,103 @@
+
+// logo 
+.logo {
+    fill: $white;
+}
+
+// icon search 
+
+.icon-search {
+    fill: $white;
+    width: 17px;
+    height: 17px;
+}
+
+// icon bag 
+
+.icon-bag {
+    path {
+        stroke: $white;
+    }
+}
+
+// icon base setting
+%icon-base {
+    background-size: contain;
+    background-repeat: no-repeat; 
+    display: inline-block;
+}
+
+
+// arrow right
+.icon-arrow-right {
+    @extend %icon-base;
+    background-image: url("../img/icons/next.svg");
+    width: 15px;
+    height: 15px;
+}
+
+// arrow left
+.icon-arrow-left {
+    @extend %icon-base;
+    background-image: url("../img/icons/prev.svg");
+    width: 15px;
+    height: 15px;
+}
+
+// toggle hamburger
+.toggle-btn {
+    background-color: transparent;
+    width: $spacer-5;
+    height: $spacer-5;
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+    span {
+        display: block;
+        position: relative;
+        height: 2px;
+        background: $white;
+        transition: .3s background;
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $white;
+            transition: .3s all;
+        }
+        &::after {
+            top: 14px;
+        }
+        &::before {
+            width: 80%;
+            left: 3px;
+        }
+    }
+    &--active {
+        span {
+            background: 0 0 !important;
+            &::after {
+                -webkit-transform: translateY(-7px) rotate(45deg);
+                -ms-transform: translateY(-7px) rotate(45deg);
+                transform: translateY(-7px) rotate(45deg);
+                -webkit-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+            &::before {
+                width: 100%;
+                left: 0;
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                -webkit-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+        }
+    }
+}
